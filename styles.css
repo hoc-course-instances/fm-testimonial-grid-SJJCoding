@@ -1,0 +1,106 @@
+body {
+    margin: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    grid-template-areas: 
+    "daniel jonathan jeanette"
+    "patrick kira";
+    height: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all cubic-bezier(0.39, 0.575, 0.565, 6) 10s;
+    animation: kgaming 6s cubic-bezier(0.455, 0.03, 0.515, 10) 3s 1;
+    background-color: hsl(0, 0%, 81%);
+    font-family: Glory;
+}
+
+li{list-style: none;}
+
+img  {
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin:  0;
+}
+
+.tt {
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: block;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.daniel {
+    grid-column: span 2;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+/* css_hell */
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.jeanette {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: white;
+}
+
+.patrick {
+    background-color: white;
+}
+
+.kira {
+    grid-column: span 2;
+    color: white;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.thing {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+@keyframes kgaming {
+from{
+
+
+}
+
+to{
+transform: translateX(10%) skew(10deg, 60deg);
+background: radial-gradient(red, blue, green, gray, white, purple, green, yellow, teal)
+
+}
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
